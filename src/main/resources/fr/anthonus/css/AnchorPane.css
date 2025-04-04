@@ -1,0 +1,5 @@
+@import "Colors.css";
+
+AnchorPane {
+    -fx-background-color: -backgroundColor;
+}
