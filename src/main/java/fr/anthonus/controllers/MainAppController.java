@@ -84,7 +84,6 @@ public class MainAppController implements Initializable {
 
 
     // FILE PATH METHODS
-
     /**
      * This method is called when the user clicks the search file button.
      * It opens a file chooser dialog to select a file.

@@ -21,16 +21,7 @@ application {
 }
 
 jlink {
-    imageName = 'NASUpload'
-    launcher {
-        name = 'NASUpload'
-    }
-    jpackage {
-        installerType = 'exe'
-        installerName = 'NASUpload'
-        appVersion = '0.0.1'
-        icon = 'icon.ico'
-    }
+    ///TODO: Add jlink options
 }
 
 dependencies {
