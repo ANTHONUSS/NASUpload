@@ -1,0 +1,45 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'org.beryx.jlink' version '3.1.1'
+}
+
+group = 'fr.anthonus'
+version = '0.0.1-DEV'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "24"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+application {
+    mainClassName = 'fr.anthonus.Main'
+}
+
+jlink {
+    imageName = 'NASUpload'
+    launcher {
+        name = 'NASUpload'
+    }
+    jpackage {
+        installerType = 'exe'
+        installerName = 'NASUpload'
+        appVersion = '0.0.1'
+        icon = 'icon.ico'
+    }
+}
+
+dependencies {
+    implementation 'io.github.palexdev:materialfx:11.17.0'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
